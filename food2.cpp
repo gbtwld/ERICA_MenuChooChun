@@ -59,7 +59,7 @@ int main() {
             if (price <= money) {
                 cout << "메뉴: " << m << ", 가격: " << price << "원" <<'\n';
             }else if(price > money){
-                cout << "못 시키는 메뉴: " << m << ", 사용할 돈: " << money << "원" << ", 부족한 : " << abs(money-price) << "원" << '\n';
+                cout << "못 시키는 메뉴: " << m << ", 사용할 돈: " << money << "원" << ", 부족한 돈: " << abs(money-price) << "원" << '\n';
             }
         }
     }
