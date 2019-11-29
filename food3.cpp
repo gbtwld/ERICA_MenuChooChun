@@ -64,11 +64,11 @@ int main() {
   cout << "사용할 돈: ";
   int money;
   cin >> money;
-  cout << "1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n식당 입력: ";
+  cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n\n식당 입력: ";
   string store; cin >> store;
   auto find = menu.find(store);
   if (find == menu.end()) {
-    cout << "이런 식당 없음\n";
+    cout << "\n이런 식당 없음\n";
   } else {
     vector<pair<string, int>> rest = find->second;
     for(auto it : rest) {
