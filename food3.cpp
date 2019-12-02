@@ -78,12 +78,15 @@ void init() {
 }
 
 int main() {
-  init();
   cout << "사용할 돈: ";
   int money;
   cin >> money;
+  cin.ignore();
+  init();
   cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n\n식당 입력: ";
-  string store; cin >> store;
+  string store;
+  getline(cin, store);
+  cout << store <<'\n';
   auto find = menu.find(store);
   if (find == menu.end()) {
     cout << "\n이런 식당 없음\n";
