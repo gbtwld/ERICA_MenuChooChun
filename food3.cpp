@@ -6,6 +6,7 @@
 using namespace std;
 
 map<string, vector<pair<string, int>>> menu;
+
 void Happy(){ //이름 지정
   vector<pair<string, int>> vec;
   //vec.push_back({ "메뉴이름", 금액 });
@@ -37,6 +38,7 @@ void alchon() {
 
   menu["알촌"] = vec;
 }
+
 void Cooksville(){
   vector<pair<string, int>> vec;
   vec.push_back({ "데리치킨스테이크", 4500 });
@@ -52,11 +54,27 @@ void Cooksville(){
 
   menu["쿡스빌"] = vec;
 }
+
+void BrotherS() {
+  vector<pair<string, int>> vec;
+  vec.push_back({ "브라더 함박 스테이크", 4500 });
+  vec.push_back({ "치즈 함박", 5000 });
+  vec.push_back({ "에그 함박", 5000 });
+  vec.push_back({ "카레 함박", 5500 });
+  vec.push_back({ "목살 스테이크", 6500 });
+  vec.push_back({ "삼겹살 스테이크", 6500 });
+  vec.push_back({ "스파이시 치킨 스테이크", 6500 });
+  vec.push_back({ "비프 스테이크", 7500 });
+
+  menu["브라더 스테이크"] = vec;
+}
+
 void init() {
 	//위에서 지정한 식당 이름 적기
   alchon();
   Cooksville();
   Happy();
+  BrotherS();
 }
 
 int main() {
@@ -64,7 +82,7 @@ int main() {
   cout << "사용할 돈: ";
   int money;
   cin >> money;
-  cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n\n식당 입력: ";
+  cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n\n식당 입력: ";
   string store; cin >> store;
   auto find = menu.find(store);
   if (find == menu.end()) {
