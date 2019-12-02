@@ -82,7 +82,7 @@ int main() {
     int money;
     cin >> money;
     while(1){
-        if(money <=3000) {
+        if(money < 3000) {
             cout << "최소 금액은 3000원입니다. 3000원 이상으로 적어주십시오." << '\n' << "사용할 돈: ";
             cin >> money;
         }else break;
