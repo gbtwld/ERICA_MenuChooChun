@@ -69,12 +69,32 @@ void BrotherS() {
     menu["브라더 스테이크"] = vec;
 }
 
+void MDSV() {
+	vector<pair<string, int>> vec;
+	vec.push_back({ "양푼 돼지고기 김치찌개(2~3인)", 13000 });
+	vec.push_back({ "양푼명태 내장탕(2~3인)", 13000 });
+	vec.push_back({ "닭 한마리 김치찌개", 20000 });
+
+	menu["명동찌개마을"] = vec;
+}
+
+void UMe() {
+	vector<pair<string, int>> vec;
+	vec.push_back({ "유라멘", 6900 });
+	vec.push_back({ "메라멘", 6900 });
+	vec.push_back({ "차슈덮밥", 6900 });
+
+	menu["유메식당"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
     alchon();
     Cooksville();
     Happy();
     BrotherS();
+	MDSV();
+	UMe();
 }
 
 int main() {
@@ -83,16 +103,16 @@ int main() {
     cin >> money;
     while(1){
         if(money < 3000) {
-            cout << "최소 금액은 3000원입니다. 3000원 이상으로 적어주십시오." << '\n' << "사용할 돈: ";
+            cout << "\n최소 금액은 3000원입니다. 3000원 이상으로 적어주십시오." << "\n\n사용할 돈: ";
             cin >> money;
         }else break;
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n\n식당 입력: ";
     string store;
     getline(cin, store);
-    cout << store <<'\n';
+    cout << '\n';
     auto find = menu.find(store);
     if (find == menu.end()) {
         cout << "\n이런 식당 없음\n";
@@ -102,9 +122,9 @@ int main() {
             string m = it.first;
             int price = it.second;
             if (price <= money) {
-                cout << "메뉴: " << m << ", 가격: " << price << "원" <<'\n';
+                cout << "메뉴: " << m << ", 가격: " << price << "원\n";
             }else if(price > money){
-                cout << "못 시키는 메뉴: " << m << ", 사용할 돈: " << money << "원" << ", 부족한 돈: " << abs(money-price) << "원" << '\n';
+                cout << "못 시키는 메뉴: " << m << ", 사용할 돈: " << money << "원" << ", 부족한 돈: " << abs(money-price) << "원\n";
             }
         }
     }
