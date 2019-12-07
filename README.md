@@ -6,3 +6,4 @@
 
 2019025650 김효성 kikyo424
 
+https://docs.google.com/document/d/1M3RVCowNZoQpe-NkdfVvUzP7XuPTJa-qzd2FYAED8YM/edit?usp=sharing
