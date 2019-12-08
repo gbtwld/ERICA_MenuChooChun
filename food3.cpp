@@ -78,6 +78,26 @@ void MDSV() {
 	menu["명동찌개마을"] = vec;
 }
 
+void One(){ 
+	vector<pair<string, int>> vec;
+	vec.push_back({ "제육덮밥", 6000 });
+	vec.push_back({ "김치제육덮밥", 6000 });
+	vec.push_back({ "치킨 와사비마요", 6000 });
+	vec.push_back({ "새우튀김 와사비마요", 7000 });
+	vec.push_back({ "소불고기덮밥", 7000 });
+	vec.push_back({ "마늘대패삼겹덮밥", 7000 });
+	vec.push_back({ "함박스테이크덮밥", 7000 });
+	vec.push_back({ "큐브스테이크덮밥", 8000 });
+	vec.push_back({ "연어스테이크덮밥", 8000 });
+	vec.push_back({ "새우장비빔밥", 8000 });
+	vec.push_back({ "생새우비빔밥", 8000 });
+	vec.push_back({ "날치알아보카도", 8000 });
+	vec.push_back({ "생연어덮밥", 8000 });
+	vec.push_back({ "연어장덮밥", 8000 });
+
+	menu["한그릇"] = vec;
+}
+
 void UMe() {
 	vector<pair<string, int>> vec;
 	vec.push_back({ "유라멘", 6900 });
@@ -94,6 +114,7 @@ void init() {
     Happy();
     BrotherS();
 	MDSV();
+	One();
 	UMe();
 }
 
@@ -109,7 +130,7 @@ int main() {
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 한그릇\n7. 유메식당\n\n식당 입력: ";
     string store;
     getline(cin, store);
     cout << '\n';
