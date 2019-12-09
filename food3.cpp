@@ -86,6 +86,12 @@ void UMe() {
 
 	menu["유메식당"] = vec;
 }
+void MIHARU() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "부타동 덮밥", 6000});
+    vec.push_back({ "규동 덮밥", 6500});
+    vec.push_back({ "함박스테이크 덮밥", 6500});
+}
 
 void init() {
     //위에서 지정한 식당 이름 적기
