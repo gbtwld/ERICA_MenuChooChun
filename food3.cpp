@@ -70,12 +70,12 @@ void BrotherS() {
 }
 
 void MDSV() {
-	vector<pair<string, int>> vec;
-	vec.push_back({ "양푼 돼지고기 김치찌개(2~3인)", 13000 });
-	vec.push_back({ "양푼명태 내장탕(2~3인)", 13000 });
-	vec.push_back({ "닭 한마리 김치찌개", 20000 });
+    vector<pair<string, int>> vec;
+    vec.push_back({ "양푼 돼지고기 김치찌개(2~3인)", 13000 });
+    vec.push_back({ "양푼명태 내장탕(2~3인)", 13000 });
+    vec.push_back({ "닭 한마리 김치찌개", 20000 });
 
-	menu["명동찌개마을"] = vec;
+    menu["명동찌개마을"] = vec;
 }
 
 void One(){ 
@@ -99,12 +99,50 @@ void One(){
 }
 
 void UMe() {
-	vector<pair<string, int>> vec;
-	vec.push_back({ "유라멘", 6900 });
-	vec.push_back({ "메라멘", 6900 });
-	vec.push_back({ "차슈덮밥", 6900 });
+    vector<pair<string, int>> vec;
+    vec.push_back({ "유라멘", 6900 });
+    vec.push_back({ "메라멘", 6900 });
+    vec.push_back({ "차슈덮밥", 6900 });
 
-	menu["유메식당"] = vec;
+    menu["유메식당"] = vec;
+}
+void MIHARU() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "부타동 덮밥", 6000});
+    vec.push_back({ "규동 덮밥", 6500});
+    vec.push_back({ "함박스테이크 덮밥", 6500});
+
+    menu["미하루식당"] = vec;
+}
+
+void PlanB() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "치킨 라이스", 3500 });
+    vec.push_back({ "소고기 라이스", 4000 });
+    vec.push_back({ "치킨 감자", 4000 });
+    vec.push_back({ "새우 감자", 4000 });
+    vec.push_back({ "미트볼 감자", 4000 });
+    vec.push_back({ "소고기 베이컨 라이스", 4500 });
+    vec.push_back({ "소시지 감자", 4500 });
+    vec.push_back({ "소고기 베이컨 감자", 5000 });
+
+    menu["밀플랜비"] = vec;
+}
+
+void EStand() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "이서제육", 6000 });
+    vec.push_back({ "김치찌개", 6000 });
+    vec.push_back({ "애호박찌개", 6000 });
+    vec.push_back({ "애호박칼국수(2인이상)", 7000 });
+    vec.push_back({ "이서소불고기(2인이상)", 7000 });
+    vec.push_back({ "초벌 막창(200g)", 11000 });
+    vec.push_back({ "생 삼겹살(200g)", 11000 });
+    vec.push_back({ "생 목살(200g)", 11000 });
+    vec.push_back({ "초벌 삼겹살(200g)", 12000 });
+    vec.push_back({ "초벌 목살(200g)", 12000 });
+
+    menu["이서식당"] = vec;
 }
 
 void init() {
@@ -116,6 +154,11 @@ void init() {
 	MDSV();
 	One();
 	UMe();
+    MDSV();
+    UMe();
+    MIHARU();
+    PlanB();
+    EStand();
 }
 
 int main() {
@@ -130,7 +173,7 @@ int main() {
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 한그릇\n7. 유메식당\n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n\n식당 입력: ";
     string store;
     getline(cin, store);
     cout << '\n';
