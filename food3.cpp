@@ -145,20 +145,18 @@ void EStand() {
     menu["이서식당"] = vec;
 }
 
-void
-
 void init() {
     //위에서 지정한 식당 이름 적기
-    alchon(); //알촌
-    Cooksville(); //쿡스빌
-    Happy(); //행복한짬뽕
-    BrotherS(); //브라더 스테이크
-	MDSV(); //명동찌개마을
-	One(); //한그릇
-	UMe(); //유메식당
-    MIHARU(); //미하루 덮밥
-    PlanB(); //밀플랜비
-    EStand(); //이서식당
+    alchon();
+    Cooksville();
+    Happy();
+    BrotherS();
+	MDSV();
+	One();
+    UMe();
+    MIHARU();
+    PlanB();
+    EStand();
 }
 
 int main() {
@@ -173,7 +171,7 @@ int main() {
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n\n식당 입력: ";
     string store;
     getline(cin, store);
     cout << '\n';
