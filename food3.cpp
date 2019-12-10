@@ -145,6 +145,24 @@ void EStand() {
     menu["이서식당"] = vec;
 }
 
+void Positano() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "통삼겹스테이크 정식", 6900 });
+    vec.push_back({ "허니쉬림프 정식", 6900 });
+    vec.push_back({ "간장새우장 정식", 6900 });
+    vec.push_back({ "스테이크 정식", 7900 });
+    vec.push_back({ "소맛보새우 정식", 7900 });
+    vec.push_back({ "BBQ 크림파스타", 14900 });
+    vec.push_back({ "스테이크 크림 파스타", 15900 });
+    vec.push_back({ "핫스테이크 SET", 15900 });
+    vec.push_back({ "바베큐 폭립 샘플러", 15900 });
+    vec.push_back({ "크랩 로제 파스타", 16900 });
+    vec.push_back({ "쉬림프 오일 파스타", 16900 });
+    vec.push_back({ "벌집퐁듀&쉬림프박스 SET", 16900 });
+
+    menu["포지타노"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
     alchon(); //알촌
@@ -157,6 +175,7 @@ void init() {
     MIHARU(); //미하루덮밥
     PlanB(); //밀플랜비
     EStand(); //이서식당
+    Positano();
 }
 
 int main() {
@@ -171,7 +190,7 @@ int main() {
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n\n식당 입력: ";
     string store;
     getline(cin, store);
     cout << '\n';
