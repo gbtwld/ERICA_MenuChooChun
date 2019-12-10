@@ -109,6 +109,22 @@ void PlanB() {
     menu["밀플랜비"] = vec;
 }
 
+void EStand() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "이서제육", 6000 });
+    vec.push_back({ "김치찌개", 6000 });
+    vec.push_back({ "애호박찌개", 6000 });
+    vec.push_back({ "애호박칼국수(2인이상)", 7000 });
+    vec.push_back({ "이서소불고기(2인이상)", 7000 });
+    vec.push_back({ "초벌 막창(200g)", 11000 });
+    vec.push_back({ "생 삼겹살(200g)", 11000 });
+    vec.push_back({ "생 목살(200g)", 11000 });
+    vec.push_back({ "초벌 삼겹살(200g)", 12000 });
+    vec.push_back({ "초벌 목살(200g)", 12000 });
+
+    menu["이서식당"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
     alchon();
@@ -119,6 +135,7 @@ void init() {
     UMe();
     MIHARU();
     PlanB();
+    EStand();
 }
 
 int main() {
