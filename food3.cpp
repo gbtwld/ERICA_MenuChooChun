@@ -95,6 +95,20 @@ void MIHARU() {
     menu["미하루식당"] = vec;
 }
 
+void PlanB() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "치킨 라이스", 3500 });
+    vec.push_back({ "소고기 라이스", 4000 });
+    vec.push_back({ "치킨 감자", 4000 });
+    vec.push_back({ "새우 감자", 4000 });
+    vec.push_back({ "미트볼 감자", 4000 });
+    vec.push_back({ "소고기 베이컨 라이스", 4500 });
+    vec.push_back({ "소시지 감자", 4500 });
+    vec.push_back({ "소고기 베이컨 감자", 5000 });
+
+    menu["밀플랜비"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
     alchon();
@@ -104,6 +118,7 @@ void init() {
     MDSV();
     UMe();
     MIHARU();
+    PlanB();
 }
 
 int main() {
