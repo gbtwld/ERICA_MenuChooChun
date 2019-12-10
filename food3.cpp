@@ -147,16 +147,16 @@ void EStand() {
 
 void init() {
     //위에서 지정한 식당 이름 적기
-    alchon();
-    Cooksville();
-    Happy();
-    BrotherS();
-	MDSV();
-	One();
-    UMe();
-    MIHARU();
-    PlanB();
-    EStand();
+    alchon(); //알촌
+    Cooksville(); //쿡스빌
+    Happy(); //행복핝짬뽕
+    BrotherS(); //브라더스테이크
+	MDSV(); //명동찌개마을
+	One(); //한그릇
+    UMe(); //유메식당
+    MIHARU(); //미하루덮밥
+    PlanB(); //밀플랜비
+    EStand(); //이서식당
 }
 
 int main() {
