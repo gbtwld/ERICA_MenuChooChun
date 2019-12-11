@@ -163,11 +163,24 @@ void Positano() {
     menu["포지타노"] = vec;
 }
 
+void Pizzalia() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "페퍼로니피자", 12000 });
+    vec.push_back({ "콤비네이션피자", 12000 });
+    vec.push_back({ "불고기피자", 12000 });
+    vec.push_back({ "치킨피자", 12000 });
+    vec.push_back({ "야채피자", 12000 });
+    vec.push_back({ "베이컨피자", 12000 });
+    vec.push_back({ "더블치즈피자", 12000 });
+
+    menu["피자리아"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
     alchon(); //알촌
     Cooksville(); //쿡스빌
-    Happy(); //행복핝짬뽕
+    Happy(); //행복한짬뽕
     BrotherS(); //브라더스테이크
 	MDSV(); //명동찌개마을
 	One(); //한그릇
@@ -175,7 +188,8 @@ void init() {
     MIHARU(); //미하루덮밥
     PlanB(); //밀플랜비
     EStand(); //이서식당
-    Positano();
+    Positano(); //포지타노
+    Pizzalia(); //피자리아
 }
 
 int main() {
