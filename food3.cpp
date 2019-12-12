@@ -189,6 +189,7 @@ void Ddeli() {
 	vec.push_back({ "치즈 참치 김밥", 3500 });
 
 	menu["디델리"] = vec;
+}
 
 void init() {
     //위에서 지정한 식당 이름 적기
