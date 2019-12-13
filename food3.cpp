@@ -160,6 +160,7 @@ void init() {
 }
 
 int main() {
+	while (1) {
     cout <<"사용할 돈: ";
     int money;
     cin >> money;
@@ -176,19 +177,33 @@ int main() {
     getline(cin, store);
     cout << '\n';
     auto find = menu.find(store);
-    if (find == menu.end()) {
+	char ans;
+		if (find == menu.end()) {
         cout << "\n이런 식당 없음\n";
-    } else {
-        vector<pair<string, int>> rest = find->second;
-        for(auto it : rest) {
-            string m = it.first;
-            int price = it.second;
-            if (price <= money) {
-                cout << "메뉴: " << m << ", 가격: " << price << "원\n";
-            }else if(price > money){
-                cout << "못 시키는 메뉴: " << m << ", 사용할 돈: " << money << "원" << ", 부족한 돈: " << abs(money-price) << "원\n";
-            }
-        }
-    }
+		} else {
+        	vector<pair<string, int>> rest = find->second;
+        	for(auto it : rest) {
+            	string m = it.first;
+            	int price = it.second;
+            	if (price <= money) {
+                	cout << "메뉴: " << m << ", 가격: " << price << "원\n";
+            	}else if(price > money){
+                	cout << "못 시키는 메뉴: " << m << ", 사용할 돈: " << money << "원" << ", 부족한 돈: " << abs(money-price) << "원\n";
+            	}
+			}
+		}
+		while (1) {
+			cout << "\n계속 식당을 입력하시겠습니까? [Y / N]\n";
+			cin >> ans;
+			if (ans == 'Y' || ans == 'y') break;
+			else if (ans == 'N' || ans == 'n') {
+				cout << "프로그램을 종료합니다." << '\n';
+				exit(0);
+			}
+			else {
+				cout << "잘못 입력하셨습니다. 다시 입력해주십시오." << '\n';
+			}
+		}
+	}
     return 0;
 }
