@@ -49,7 +49,7 @@ void Cooksville(){
     vec.push_back({ "까르보치킨스테이크", 5900 });
     vec.push_back({ "커리치킨스테이크", 5900 });
     vec.push_back({ "바베큐포크스테이크", 5900 });
-    vec.push_back({ "커리포크스테이크", 6000 });
+    vec.push_bacik({ "커리포크스테이크", 6000 });
     vec.push_back({ "까르보포크스테이크", 6000 });
 
     menu["쿡스빌"] = vec;
@@ -191,6 +191,18 @@ void Ddeli() {
 	menu["디델리"] = vec;
 }
 
+void Dosmas() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "닭고기 부리또", 3500 });
+    vec.push_back({ "섞어서 부리또", 3500 });
+    vec.push_back({ "치킨팝콘 부리또", 4000 });
+    vec.push_back({ "소고기 부리또", 4000 });
+    vec.push_back({ "제육 부리또", 4000 });
+    vec.push_back({ "텐더 부리또", 4000 });
+
+    menu["도스마스"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
     alchon(); //알촌
@@ -206,6 +218,7 @@ void init() {
     Positano(); //포지타노
     Pizzalia(); //피자리아
 	Ddeli(); //디델리
+	Dosmas(); //도스마스
 }
 
 int main() {
@@ -221,7 +234,7 @@ int main() {
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n14. 도스마스 \n\n식당 입력: ";
     string store;
     getline(cin, store);
     cout << '\n';
