@@ -203,6 +203,20 @@ void Dosmas() {
     menu["도스마스"] = vec;
 }
 
+void JjigaeJjigae() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "닭매운탕", 6000 });
+    vec.push_back({ "부대찌개", 6000 });
+    vec.push_back({ "버섯찌개", 6000 });
+    vec.push_back({ "순두부찌개", 6000 });
+    vec.push_back({ "김치찌개", 6000 });
+    vec.push_back({ "된장찌개", 6000 });
+	vec.push_back({ "알탕찌개", 6000 });
+	vec.push_back({ "제육볶음", 6000 });
+
+    menu["찌개찌개"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
     alchon(); //알촌
@@ -219,6 +233,7 @@ void init() {
     Pizzalia(); //피자리아
 	Ddeli(); //디델리
 	Dosmas(); //도스마스
+	JjigaeJjigae(); //찌개찌개
 }
 
 int main() {
@@ -234,7 +249,7 @@ int main() {
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n14. 도스마스 \n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n14. 도스마스 \n15. 찌개찌개\n\n식당 입력: ";
     string store;
     getline(cin, store);
     cout << '\n';
