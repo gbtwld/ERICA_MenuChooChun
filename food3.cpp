@@ -145,18 +145,67 @@ void EStand() {
     menu["이서식당"] = vec;
 }
 
+void Positano() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "통삼겹스테이크 정식", 6900 });
+    vec.push_back({ "허니쉬림프 정식", 6900 });
+    vec.push_back({ "간장새우장 정식", 6900 });
+    vec.push_back({ "스테이크 정식", 7900 });
+    vec.push_back({ "소맛보새우 정식", 7900 });
+    vec.push_back({ "BBQ 크림파스타", 14900 });
+    vec.push_back({ "스테이크 크림 파스타", 15900 });
+    vec.push_back({ "핫스테이크 SET", 15900 });
+    vec.push_back({ "바베큐 폭립 샘플러", 15900 });
+    vec.push_back({ "크랩 로제 파스타", 16900 });
+    vec.push_back({ "쉬림프 오일 파스타", 16900 });
+    vec.push_back({ "벌집퐁듀&쉬림프박스 SET", 16900 });
+
+    menu["포지타노"] = vec;
+}
+
+void Pizzalia() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "페퍼로니피자", 12000 });
+    vec.push_back({ "콤비네이션피자", 12000 });
+    vec.push_back({ "불고기피자", 12000 });
+    vec.push_back({ "치킨피자", 12000 });
+    vec.push_back({ "야채피자", 12000 });
+    vec.push_back({ "베이컨피자", 12000 });
+    vec.push_back({ "더블치즈피자", 12000 });
+
+    menu["피자리아"] = vec;
+}
+
+void Ddeli() {
+	vector<pair<string, int>> vec;
+	vec.push_back({ "정통 퓨전 라볶이", 5500 });
+	vec.push_back({ "매콤 비프 라볶이", 6000 });
+	vec.push_back({ "크림 치즈 라볶이", 6500 });
+	vec.push_back({ "정통 퓨전 그라탕", 7000 });
+	vec.push_back({ "매콤 비프 그라탕", 7000 });
+	vec.push_back({ "디델리 김밥", 3000 });
+	vec.push_back({ "참치 김밥", 3500 });
+	vec.push_back({ "치즈 김밥", 3000 });
+	vec.push_back({ "치즈 참치 김밥", 3500 });
+
+	menu["디델리"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
-    alchon();
-    Cooksville();
-    Happy();
-    BrotherS();
-	MDSV();
-	One();
-    UMe();
-    MIHARU();
-    PlanB();
-    EStand();
+    alchon(); //알촌
+    Cooksville(); //쿡스빌
+    Happy(); //행복한짬뽕
+    BrotherS(); //브라더스테이크
+	MDSV(); //명동찌개마을
+	One(); //한그릇
+    UMe(); //유메식당
+    MIHARU(); //미하루덮밥
+    PlanB(); //밀플랜비
+    EStand(); //이서식당
+    Positano(); //포지타노
+    Pizzalia(); //피자리아
+	Ddeli(); //디델리
 }
 
 int main() {
@@ -172,7 +221,7 @@ int main() {
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n\n식당 입력: ";
     string store;
     getline(cin, store);
     cout << '\n';
