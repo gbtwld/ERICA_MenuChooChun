@@ -49,7 +49,7 @@ void Cooksville(){
     vec.push_back({ "까르보치킨스테이크", 5900 });
     vec.push_back({ "커리치킨스테이크", 5900 });
     vec.push_back({ "바베큐포크스테이크", 5900 });
-    vec.push_bacik({ "커리포크스테이크", 6000 });
+    vec.push_back({ "커리포크스테이크", 6000 });
     vec.push_back({ "까르보포크스테이크", 6000 });
 
     menu["쿡스빌"] = vec;
