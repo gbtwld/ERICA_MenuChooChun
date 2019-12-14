@@ -269,7 +269,6 @@ int main() {
         REMOVE_SPACES(store);
         cout << '\n';
         auto find = menu.find(store);
-        char ans;
         if (find == menu.end()) {
             cout << "\n이런 식당 없음\n";
         } else {
@@ -284,23 +283,22 @@ int main() {
                 }
             }
         }
+        char ans;
+        cout << "\n계속 식당을 입력하시겠습니까? [Y / N]\n";
+        cin >> ans;
         while (1) {
-            cout << "\n계속 식당을 입력하시겠습니까? [Y / N]\n";
-            cin >> ans;
             if (ans == 'Y' || ans == 'y') break;
             else if (ans == 'N' || ans == 'n') {
                 cout << "프로그램을 종료합니다." << '\n';
                 exit(0);
             }
-            else if(ans >= 48 || ans <= 57){
-                cout << "잘못 입력하셨습니다. 다시 입력해주십시오." << '\n';
-                break;
-            }
             else if(ans == ' ') continue;
-            else {
+            else if(ans != 'Y' && ans !='y' && ans != 'N' && ans != 'n'){
                 cout << "잘못 입력하셨습니다. 다시 입력해주십시오." << '\n';
-                break;
+                cout << "\n계속 식당을 입력하시겠습니까? [Y / N]\n";
+                cin >> ans;
             }
+            else break;
         }
     }
 }
