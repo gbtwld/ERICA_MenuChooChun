@@ -4,7 +4,6 @@
 #include <utility>
 #include <map>
 using namespace std;
-#define REMOVE_SPACES(x) x.erase(std::remove(x.begin(), x.end(), ' '), x.end())
 map<string, vector<pair<string, int>>> menu;
 
 void Happy(){ //이름 지정
@@ -282,7 +281,7 @@ int main() {
         cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n""13. 디델리\n14. 도스마스 \n15. 찌개찌개\n16. 부대통령\n\n식당 입력: ";
         string store;
         getline(cin, store);
-        REMOVE_SPACES(store);
+        store.erase(std::remove(store.begin(), store.end(), ' '), store.end());
         cout << '\n';
         auto find = menu.find(store);
         if (find == menu.end()) {
