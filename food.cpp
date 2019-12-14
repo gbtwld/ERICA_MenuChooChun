@@ -21,6 +21,7 @@ void Happy(){ //이름 지정
     vec.push_back({ "해물간짜장", 7000 });
 
     menu["행복한 짬뽕"] = vec;
+    menu["1"] = vec;
 }
 
 void alchon() {
@@ -37,6 +38,7 @@ void alchon() {
     vec.push_back({ "불고기알밥", 5300 });
 
     menu["알촌"] = vec;
+    menu["2"] = vec;
 }
 
 void Cooksville(){
@@ -53,6 +55,7 @@ void Cooksville(){
     vec.push_back({ "까르보포크스테이크", 6000 });
 
     menu["쿡스빌"] = vec;
+    menu["3"] = vec;
 }
 
 void BrotherS() {
@@ -67,6 +70,7 @@ void BrotherS() {
     vec.push_back({ "비프 스테이크", 7500 });
 
     menu["브라더 스테이크"] = vec;
+    menu["4"] = vec;
 }
 
 void MDSV() {
@@ -76,6 +80,7 @@ void MDSV() {
     vec.push_back({ "닭 한마리 김치찌개", 20000 });
 
     menu["명동찌개마을"] = vec;
+    menu["5"] = vec;
 }
 
 void One(){
@@ -96,6 +101,7 @@ void One(){
     vec.push_back({ "연어장덮밥", 8000 });
 
     menu["한그릇"] = vec;
+    menu["6"] = vec;
 }
 
 void UMe() {
@@ -105,6 +111,7 @@ void UMe() {
     vec.push_back({ "차슈덮밥", 6900 });
 
     menu["유메식당"] = vec;
+    menu["7"] = vec;
 }
 void MIHARU() {
     vector<pair<string, int>> vec;
@@ -113,6 +120,7 @@ void MIHARU() {
     vec.push_back({ "함박스테이크 덮밥", 6500});
 
     menu["미하루식당"] = vec;
+    menu["8"] = vec;
 }
 
 void PlanB() {
@@ -127,6 +135,7 @@ void PlanB() {
     vec.push_back({ "소고기 베이컨 감자", 5000 });
 
     menu["밀플랜비"] = vec;
+    menu["9"] = vec;
 }
 
 void EStand() {
@@ -143,6 +152,7 @@ void EStand() {
     vec.push_back({ "초벌 목살(200g)", 12000 });
 
     menu["이서식당"] = vec;
+    menu["10"] = vec;
 }
 
 void Positano() {
@@ -161,6 +171,7 @@ void Positano() {
     vec.push_back({ "벌집퐁듀&쉬림프박스 SET", 16900 });
 
     menu["포지타노"] = vec;
+    menu["11"] = vec;
 }
 
 void Pizzalia() {
@@ -174,6 +185,7 @@ void Pizzalia() {
     vec.push_back({ "더블치즈피자", 12000 });
 
     menu["피자리아"] = vec;
+    menu["12"] = vec;
 }
 
 void Ddeli() {
@@ -189,6 +201,7 @@ void Ddeli() {
     vec.push_back({ "치즈 참치 김밥", 3500 });
 
     menu["디델리"] = vec;
+    menu["13"] = vec;
 }
 
 void Dosmas() {
@@ -201,6 +214,7 @@ void Dosmas() {
     vec.push_back({ "텐더 부리또", 4000 });
 
     menu["도스마스"] = vec;
+    menu["14"] = vec;
 }
 
 void JjigaeJjigae() {
@@ -215,6 +229,7 @@ void JjigaeJjigae() {
     vec.push_back({ "제육볶음", 6000 });
 
     menu["찌개찌개"] = vec;
+    menu["15"] = vec;
 }
 
 void Vicepresident() {
@@ -228,6 +243,7 @@ void Vicepresident() {
     vec.push_back({ "순두부찌개", 4000 });
 
     menu["부대통령"] = vec;
+    menu["16"] = vec;
 }
 
 void init() {
@@ -263,7 +279,7 @@ int main() {
         }
         cin.ignore();
         init();
-        cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n14. 도스마스 \n15. 찌개찌개\n16. 부대통령\n\n식당 입력: ";
+        cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n""13. 디델리\n14. 도스마스 \n15. 찌개찌개\n16. 부대통령\n\n식당 입력: ";
         string store;
         getline(cin, store);
         REMOVE_SPACES(store);
