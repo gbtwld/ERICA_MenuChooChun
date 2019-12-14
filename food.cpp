@@ -78,24 +78,24 @@ void MDSV() {
     menu["명동찌개마을"] = vec;
 }
 
-void One(){ 
-	vector<pair<string, int>> vec;
-	vec.push_back({ "제육덮밥", 6000 });
-	vec.push_back({ "김치제육덮밥", 6000 });
-	vec.push_back({ "치킨 와사비마요", 6000 });
-	vec.push_back({ "새우튀김 와사비마요", 7000 });
-	vec.push_back({ "소불고기덮밥", 7000 });
-	vec.push_back({ "마늘대패삼겹덮밥", 7000 });
-	vec.push_back({ "함박스테이크덮밥", 7000 });
-	vec.push_back({ "큐브스테이크덮밥", 8000 });
-	vec.push_back({ "연어스테이크덮밥", 8000 });
-	vec.push_back({ "새우장비빔밥", 8000 });
-	vec.push_back({ "생새우비빔밥", 8000 });
-	vec.push_back({ "날치알아보카도", 8000 });
-	vec.push_back({ "생연어덮밥", 8000 });
-	vec.push_back({ "연어장덮밥", 8000 });
+void One(){
+    vector<pair<string, int>> vec;
+    vec.push_back({ "제육덮밥", 6000 });
+    vec.push_back({ "김치제육덮밥", 6000 });
+    vec.push_back({ "치킨 와사비마요", 6000 });
+    vec.push_back({ "새우튀김 와사비마요", 7000 });
+    vec.push_back({ "소불고기덮밥", 7000 });
+    vec.push_back({ "마늘대패삼겹덮밥", 7000 });
+    vec.push_back({ "함박스테이크덮밥", 7000 });
+    vec.push_back({ "큐브스테이크덮밥", 8000 });
+    vec.push_back({ "연어스테이크덮밥", 8000 });
+    vec.push_back({ "새우장비빔밥", 8000 });
+    vec.push_back({ "생새우비빔밥", 8000 });
+    vec.push_back({ "날치알아보카도", 8000 });
+    vec.push_back({ "생연어덮밥", 8000 });
+    vec.push_back({ "연어장덮밥", 8000 });
 
-	menu["한그릇"] = vec;
+    menu["한그릇"] = vec;
 }
 
 void UMe() {
@@ -177,18 +177,18 @@ void Pizzalia() {
 }
 
 void Ddeli() {
-	vector<pair<string, int>> vec;
-	vec.push_back({ "정통 퓨전 라볶이", 5500 });
-	vec.push_back({ "매콤 비프 라볶이", 6000 });
-	vec.push_back({ "크림 치즈 라볶이", 6500 });
-	vec.push_back({ "정통 퓨전 그라탕", 7000 });
-	vec.push_back({ "매콤 비프 그라탕", 7000 });
-	vec.push_back({ "디델리 김밥", 3000 });
-	vec.push_back({ "참치 김밥", 3500 });
-	vec.push_back({ "치즈 김밥", 3000 });
-	vec.push_back({ "치즈 참치 김밥", 3500 });
+    vector<pair<string, int>> vec;
+    vec.push_back({ "정통 퓨전 라볶이", 5500 });
+    vec.push_back({ "매콤 비프 라볶이", 6000 });
+    vec.push_back({ "크림 치즈 라볶이", 6500 });
+    vec.push_back({ "정통 퓨전 그라탕", 7000 });
+    vec.push_back({ "매콤 비프 그라탕", 7000 });
+    vec.push_back({ "디델리 김밥", 3000 });
+    vec.push_back({ "참치 김밥", 3500 });
+    vec.push_back({ "치즈 김밥", 3000 });
+    vec.push_back({ "치즈 참치 김밥", 3500 });
 
-	menu["디델리"] = vec;
+    menu["디델리"] = vec;
 }
 
 void Dosmas() {
@@ -211,8 +211,8 @@ void JjigaeJjigae() {
     vec.push_back({ "순두부찌개", 6000 });
     vec.push_back({ "김치찌개", 6000 });
     vec.push_back({ "된장찌개", 6000 });
-	vec.push_back({ "알탕찌개", 6000 });
-	vec.push_back({ "제육볶음", 6000 });
+    vec.push_back({ "알탕찌개", 6000 });
+    vec.push_back({ "제육볶음", 6000 });
 
     menu["찌개찌개"] = vec;
 }
@@ -224,8 +224,8 @@ void Vicepresident() {
     vec.push_back({ "낙지볶음", 6000 });
     vec.push_back({ "우렁된장찌개", 4500 });
     vec.push_back({ "제육볶음", 5000 });
-	vec.push_back({ "치즈닭갈비", 6000 });
-	vec.push_back({ "순두부찌개", 4000 });
+    vec.push_back({ "치즈닭갈비", 6000 });
+    vec.push_back({ "순두부찌개", 4000 });
 
     menu["부대통령"] = vec;
 }
@@ -236,65 +236,70 @@ void init() {
     Cooksville(); //쿡스빌
     Happy(); //행복한짬뽕
     BrotherS(); //브라더스테이크
-	MDSV(); //명동찌개마을
-	One(); //한그릇
+    MDSV(); //명동찌개마을
+    One(); //한그릇
     UMe(); //유메식당
     MIHARU(); //미하루덮밥
     PlanB(); //밀플랜비
     EStand(); //이서식당
     Positano(); //포지타노
     Pizzalia(); //피자리아
-	Ddeli(); //디델리
-	Dosmas(); //도스마스
-	JjigaeJjigae(); //찌개찌개
-	Vicepresident(); //부대통령
+    Ddeli(); //디델리
+    Dosmas(); //도스마스
+    JjigaeJjigae(); //찌개찌개
+    Vicepresident(); //부대통령
 }
 
 int main() {
-	while (1) {
-    cout <<"사용할 돈: ";
-    int money;
-    cin >> money;
-    while(1){
-        if(money < 3000) {
-            cout << "\n최소 금액은 3000원입니다. 3000원 이상으로 적어주십시오." << "\n\n사용할 돈: ";
-            cin >> money;
-        }else break;
+    while (1) {
+        cout <<"사용할 돈: ";
+        int money;
+        cin >> money;
+        while(1){
+            if(money < 3000) {
+                cout << "\n최소 금액은 3000원입니다. 3000원 이상으로 적어주십시오." << "\n\n사용할 돈: ";
+                cin >> money;
+            }else break;
+        }
+        cin.ignore();
+        init();
+        cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n14. 도스마스 \n15. 찌개찌개\n16. 부대통령\n\n식당 입력: ";
+        string store;
+        getline(cin, store);
+        cout << '\n';
+        auto find = menu.find(store);
+        char ans;
+        if (find == menu.end()) {
+            cout << "\n이런 식당 없음\n";
+        } else {
+            vector<pair<string, int>> rest = find->second;
+            for(auto it : rest) {
+                string m = it.first;
+                int price = it.second;
+                if (price <= money) {
+                    cout << "메뉴: " << m << ", 가격: " << price << "원\n";
+                }else if(price > money){
+                    cout << "못 시키는 메뉴: " << m << ", 사용할 돈: " << money << "원" << ", 부족한 돈: " << abs(money-price) << "원\n";
+                }
+            }
+        }
+        while (1) {
+            cout << "\n계속 식당을 입력하시겠습니까? [Y / N]\n";
+            cin >> ans;
+            if (ans == 'Y' || ans == 'y') break;
+            else if (ans == 'N' || ans == 'n') {
+                cout << "프로그램을 종료합니다." << '\n';
+                exit(0);
+            }
+            else if(ans >= 48 || ans <= 57){
+                cout << "잘못 입력하셨습니다. 다시 입력해주십시오." << '\n';
+                break;
+            }
+            else if(ans == ' ') continue;
+            else {
+                cout << "잘못 입력하셨습니다. 다시 입력해주십시오." << '\n';
+                break;
+            }
+        }
     }
-    cin.ignore();
-    init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n14. 도스마스 \n15. 찌개찌개\n16. 부대통령\n\n식당 입력: ";
-    string store;
-    getline(cin, store);
-    cout << '\n';
-    auto find = menu.find(store);
-	char ans;
-		if (find == menu.end()) {
-        cout << "\n이런 식당 없음\n";
-		} else {
-        	vector<pair<string, int>> rest = find->second;
-        	for(auto it : rest) {
-            	string m = it.first;
-            	int price = it.second;
-            	if (price <= money) {
-                	cout << "메뉴: " << m << ", 가격: " << price << "원\n";
-            	}else if(price > money){
-                	cout << "못 시키는 메뉴: " << m << ", 사용할 돈: " << money << "원" << ", 부족한 돈: " << abs(money-price) << "원\n";
-            	}
-			}
-		}
-		while (1) {
-			cout << "\n계속 식당을 입력하시겠습니까? [Y / N]\n";
-			cin >> ans;
-			if (ans == 'Y' || ans == 'y') break;
-			else if (ans == 'N' || ans == 'n') {
-				cout << "프로그램을 종료합니다." << '\n';
-				exit(0);
-			}
-			else {
-				cout << "잘못 입력하셨습니다. 다시 입력해주십시오." << '\n';
-			}
-		}
-	}
-    return 0;
 }
