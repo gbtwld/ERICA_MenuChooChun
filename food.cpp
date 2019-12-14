@@ -230,6 +230,24 @@ void Vicepresident() {
     menu["부대통령"] = vec;
 }
 
+void Oneme() {
+    vector<pair<string, int>> vec;
+    vec.push_back({ "닭갈비(중)", 14000 });
+    vec.push_back({ "닭갈비(대)", 18000 });
+    vec.push_back({ "닭갈비(특대)", 22000 });
+    vec.push_back({ "쭈꾸미(중)", 15000 });
+    vec.push_back({ "쭈꾸미(대)", 19000 });
+    vec.push_back({ "쭈꾸미(특대)", 23000 });
+    vec.push_back({ "닭-삼(중)", 16000 });
+    vec.push_back({ "닭-삼(대)", 20000 });
+    vec.push_back({ "닭-삼(특대)", 24000 });
+    vec.push_back({ "쭈-닭(삼)(중)", 16000 });
+    vec.push_back({ "쭈-닭(삼)(대)", 20000 });
+    vec.push_back({ "쭈-닭(삼)(특대)", 24000 });
+
+    menu["일미닭갈비"] = vec;
+}
+
 void init() {
     //위에서 지정한 식당 이름 적기
     alchon(); //알촌
@@ -248,6 +266,7 @@ void init() {
 	Dosmas(); //도스마스
 	JjigaeJjigae(); //찌개찌개
 	Vicepresident(); //부대통령
+	Oneme(); //일미닭갈비
 }
 
 int main() {
@@ -263,7 +282,7 @@ int main() {
     }
     cin.ignore();
     init();
-    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n14. 도스마스 \n15. 찌개찌개\n16. 부대통령\n\n식당 입력: ";
+    cout << "\n1. 행복한 짬뽕\n2. 알촌\n3. 쿡스빌\n4. 브라더 스테이크\n5. 명동찌개마을\n6. 유메식당\n7. 미하루식당\n8. 밀플랜비\n9. 이서식당\n10. 한그릇\n11. 포지타노\n12. 피자리아\n13. 디델리\n14. 도스마스 \n15. 찌개찌개\n16. 부대통령\n17. 일미닭갈비\n\n식당 입력: ";
     string store;
     getline(cin, store);
     cout << '\n';
