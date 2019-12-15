@@ -282,6 +282,7 @@ void init() {
     Dosmas(); //도스마스
     JjigaeJjigae(); //찌개찌개
     Vicepresident(); //부대통령
+    Oneme(); //일미닭갈비
 }
 
 int main() {
