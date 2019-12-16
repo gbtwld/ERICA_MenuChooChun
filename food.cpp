@@ -4,10 +4,10 @@
 #include <utility>
 #include <map>
 using namespace std;
-map<string, vector<pair<string, int>>> menu;
+map<string, vector<pair<string, int> > > menu;
 
 void Happy(){ //이름 지정
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     //vec.push_back({ "메뉴이름", 금액 });
     vec.push_back({ "해초짜장면", 3000 });
     vec.push_back({ "행복한짬뽕", 4000 });
@@ -24,7 +24,7 @@ void Happy(){ //이름 지정
 }
 
 void alchon() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "순한알밥", 3900 });
     vec.push_back({ "약매알밥", 4300 });
     vec.push_back({ "매콤알밥", 4300 });
@@ -41,7 +41,7 @@ void alchon() {
 }
 
 void Cooksville(){
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "데리치킨스테이크", 4500 });
     vec.push_back({ "데리포크스테이크", 5000 });
     vec.push_back({ "바베큐치킨스테이크", 5400 });
@@ -58,7 +58,7 @@ void Cooksville(){
 }
 
 void BrotherS() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "브라더 함박 스테이크", 4500 });
     vec.push_back({ "치즈 함박", 5000 });
     vec.push_back({ "에그 함박", 5000 });
@@ -73,7 +73,7 @@ void BrotherS() {
 }
 
 void MDSV() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "양푼 돼지고기 김치찌개(2~3인)", 13000 });
     vec.push_back({ "양푼명태 내장탕(2~3인)", 13000 });
     vec.push_back({ "닭 한마리 김치찌개", 20000 });
@@ -83,7 +83,7 @@ void MDSV() {
 }
 
 void One(){
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "제육덮밥", 6000 });
     vec.push_back({ "김치제육덮밥", 6000 });
     vec.push_back({ "치킨 와사비마요", 6000 });
@@ -104,7 +104,7 @@ void One(){
 }
 
 void UMe() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "유라멘", 6900 });
     vec.push_back({ "메라멘", 6900 });
     vec.push_back({ "차슈덮밥", 6900 });
@@ -113,7 +113,7 @@ void UMe() {
     menu["7"] = vec;
 }
 void MIHARU() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "부타동 덮밥", 6000});
     vec.push_back({ "규동 덮밥", 6500});
     vec.push_back({ "함박스테이크 덮밥", 6500});
@@ -123,7 +123,7 @@ void MIHARU() {
 }
 
 void PlanB() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "치킨 라이스", 3500 });
     vec.push_back({ "소고기 라이스", 4000 });
     vec.push_back({ "치킨 감자", 4000 });
@@ -138,7 +138,7 @@ void PlanB() {
 }
 
 void EStand() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "이서제육", 6000 });
     vec.push_back({ "김치찌개", 6000 });
     vec.push_back({ "애호박찌개", 6000 });
@@ -155,7 +155,7 @@ void EStand() {
 }
 
 void Positano() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "통삼겹스테이크 정식", 6900 });
     vec.push_back({ "허니쉬림프 정식", 6900 });
     vec.push_back({ "간장새우장 정식", 6900 });
@@ -174,7 +174,7 @@ void Positano() {
 }
 
 void Pizzalia() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "페퍼로니피자", 12000 });
     vec.push_back({ "콤비네이션피자", 12000 });
     vec.push_back({ "불고기피자", 12000 });
@@ -188,7 +188,7 @@ void Pizzalia() {
 }
 
 void Ddeli() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "정통 퓨전 라볶이", 5500 });
     vec.push_back({ "매콤 비프 라볶이", 6000 });
     vec.push_back({ "크림 치즈 라볶이", 6500 });
@@ -204,7 +204,7 @@ void Ddeli() {
 }
 
 void Dosmas() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "닭고기 부리또", 3500 });
     vec.push_back({ "섞어서 부리또", 3500 });
     vec.push_back({ "치킨팝콘 부리또", 4000 });
@@ -217,7 +217,7 @@ void Dosmas() {
 }
 
 void JjigaeJjigae() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "닭매운탕", 6000 });
     vec.push_back({ "부대찌개", 6000 });
     vec.push_back({ "버섯찌개", 6000 });
@@ -232,7 +232,7 @@ void JjigaeJjigae() {
 }
 
 void Vicepresident() {
-    vector<pair<string, int>> vec;
+    vector<pair<string, int> > vec;
     vec.push_back({ "부대찌개", 5000 });
     vec.push_back({ "닭갈비", 5000 });
     vec.push_back({ "낙지볶음", 6000 });
@@ -246,7 +246,7 @@ void Vicepresident() {
 }
 
 void Oneme() {
-	vector<pair<string, int>> vec;
+	vector<pair<string, int> > vec;
 	vec.push_back({ "닭갈비(중)", 14000 });
 	vec.push_back({ "닭갈비(대)", 18000 });
 	vec.push_back({ "닭갈비(특대)", 22000 });
@@ -307,7 +307,7 @@ int main() {
         if (find == menu.end()) {
             cout << "\n이런 식당 없음\n";
         } else {
-            vector<pair<string, int>> rest = find->second;
+            vector<pair<string, int> > rest = find->second;
             for(auto it : rest) {
                 string m = it.first;
                 int price = it.second;
