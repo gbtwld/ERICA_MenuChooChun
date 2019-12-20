@@ -19,7 +19,7 @@ void Happy(){ //이름 지정
     vec.push_back({ "탕볶밥", 7000 });
     vec.push_back({ "해물간짜장", 7000 });
 
-    menu["행복한 짬뽕"] = vec;
+    menu["행복한짬뽕"] = vec;
     menu["1"] = vec;
 }
 
@@ -68,7 +68,7 @@ void BrotherS() {
     vec.push_back({ "스파이시 치킨 스테이크", 6500 });
     vec.push_back({ "비프 스테이크", 7500 });
 
-    menu["브라더 스테이크"] = vec;
+    menu["브라더스테이크"] = vec;
     menu["4"] = vec;
 }
 
